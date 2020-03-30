@@ -1,0 +1,90 @@
+﻿<div class="row">
+    <button type="button" class="btn btn-default btn"
+            *ngIf="!enableEdit"
+            (click)="enableAdd = true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+</div>
+
+
+<div class='card'>
+    <div class='card-header'>
+        Item List
+    </div>
+    <div class="card-body">
+        <div>
+
+        </div>
+        <div class="table-responsive text-nowrap">
+            <!--Table-->
+            <table class="table table-striped">
+
+                <!--Table head-->
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <!--Table head-->
+                <!--Table body-->
+                <tbody>
+
+                    <tr *ngFor="let item of items;let rowid = index" class="hover-highlight">
+                        <td>
+                            <a [routerLink]="['/items', item.id]">
+                                {{ item.id }}
+                            </a>
+                        </td>
+                        <td>
+                            <span *ngIf="enableEdit" (keyup)="changeValue(rowid, 'name', $event)" (blur)="updateList(rowid, 'name', $event)" contenteditable="true">{{item.name}}</span>
+                            <span *ngIf="!enableEdit">{{item.name}}</span>
+
+                        </td>
+                        <td>
+                            <span *ngIf="enableEdit" (keyup)="changeValue(rowid, 'cost', $event)" (blur)="updateList(rowid, 'cost', $event)" contenteditable="true">{{item.cost}}</span>
+                            <span *ngIf="!enableEdit">{{item.cost}}</span>
+
+                        </td>
+
+
+                        <td>
+                            <button *ngIf="enableEdit" (click)="cancel()" class="btn page-secondary-action-btn" ng-click="cancel()">
+                                <i class="fa fa-undo" aria-hidden="true"></i>
+                            </button>
+                            <button *ngIf="enableEdit" id="saveBtn" class="btn page-primary-action-btn" (click)="save()"
+                                    type="submit">
+                                <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                            </button>
+                            <button class="table-row-action edit-action" *ngIf="false" (click)="enableEdit = true">
+                                <i class="fa fa-pencil" uib-tooltip="Edit" tooltip-trigger="mouseenter"
+                                   tooltip-append-to-body="true" tooltip-placement="left">
+                                </i>
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm"
+                                    [routerLink]="['/items', item.id, 'edit']">
+                                Edit
+                                <i class="fa fa-pencil" uib-tooltip="Edit" tooltip-trigger="mouseenter"
+                                   tooltip-append-to-body="true" tooltip-placement="left">
+                                </i>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary btn-sm" *ngIf="!enableEdit"
+                                    (click)="deleteItem(item.id, item.name)">
+                                Delete
+                                <i class="fa fa-times" uib-tooltip="Delete" tooltip-trigger="mouseenter"
+                                   tooltip-append-to-body="true" tooltip-placement="left">
+                                </i>
+                            </button>
+                        </td>
+
+                    </tr>
+                </tbody>
+                <!--Table body-->
+
+
+            </table>
+        </div>
+    </div>
+</div>

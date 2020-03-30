@@ -1,0 +1,128 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Release\netcoreapp3.0\appsettings.Development.json" />
+    <Content Include="bin\Release\netcoreapp3.0\appsettings.json" />
+    <Content Include="bin\Release\netcoreapp3.0\Properties\launchSettings.json" />
+    <Content Include="bin\Release\netcoreapp3.0\publish\appsettings.Development.json" />
+    <Content Include="bin\Release\netcoreapp3.0\publish\appsettings.json" />
+    <Content Include="bin\Release\netcoreapp3.0\publish\Server.deps.json" />
+    <Content Include="bin\Release\netcoreapp3.0\publish\Server.runtimeconfig.json" />
+    <Content Include="bin\Release\netcoreapp3.0\Server.deps.json" />
+    <Content Include="bin\Release\netcoreapp3.0\Server.runtimeconfig.dev.json" />
+    <Content Include="bin\Release\netcoreapp3.0\Server.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0-preview.2.20120.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-preview.2.20120.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0-preview.1.20120.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0-preview.1.20120.4" />
+    <PackageReference Include="MySql.Data" Version="6.10.7" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.0.19" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="publish\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Release\netcoreapp3.0\EntityFramework.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\netcoreapp3.0\MySql.Data.dll" />
+    <None Include="bin\Release\netcoreapp3.0\MySql.Data.EntityFramework.dll" />
+    <None Include="bin\Release\netcoreapp3.0\MySql.Data.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\EntityFramework.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Server.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Server.exe" />
+    <None Include="bin\Release\netcoreapp3.0\publish\Server.pdb" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Collections.Immutable.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\netcoreapp3.0\publish\web.config" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Server.dll" />
+    <None Include="bin\Release\netcoreapp3.0\Server.exe" />
+    <None Include="bin\Release\netcoreapp3.0\Server.pdb" />
+    <None Include="bin\Release\netcoreapp3.0\System.Collections.Immutable.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Release\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll" />
+  </ItemGroup>
+
+</Project>
